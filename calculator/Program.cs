@@ -81,12 +81,12 @@ namespace calculator
             //先乘除
             for (int i = 0; i < sign.Length; i++)
             {
-                if (sign[i] == signs[2])//運算符號為*時
+                if (sign[i] == '*')
                 {
                     num[i - count] = num[i - count] * num[i + 1];
                     count++;
                 }
-                else if (sign[i] == signs[3])//運算符號為/時
+                else if (sign[i] == '/')
                 {
                     num[i - count] = num[i - count] / num[i + 1];
                     count++;
