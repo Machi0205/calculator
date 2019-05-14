@@ -8,6 +8,7 @@ namespace calculator
 {
     class Program
     {
+        static string[] a = { "0" };
         static char[] signs = { '+', '-', '*', '/' };
         static double[] num;//有哪些數字
         static char[] sign;//有哪些運算符號
@@ -22,8 +23,7 @@ namespace calculator
             Sign_Position(char_formula);
             Console.WriteLine(Answer());
 
-
-            Console.ReadLine();
+            Main(a);
         }
 
         //判斷有幾個運算符號來指定陣列長度
