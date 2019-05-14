@@ -100,11 +100,11 @@ namespace calculator
             double ans = num[0];
             for (int i = 0; i < sign.Length; i++)
             {
-                if (sign[i] == signs[0])
+                if (sign[i] == '+')
                 {
                     ans += num[i + 1];
                 }
-                else if (sign[i] == signs[1])
+                else if (sign[i] == '-')
                 {
                     ans -= num[i + 1];
                 }
